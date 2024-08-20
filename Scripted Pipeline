@@ -1,0 +1,36 @@
+#### Scripted Pipeline in Jenkins: A Detailed Overview
+
+**Introduction**
+
+The Scripted Pipeline in Jenkins offers unparalleled flexibility for creating CI/CD pipelines. Unlike the more structured Declarative Pipeline, the Scripted Pipeline uses Groovy scripting to give you complete control over your pipeline’s behavior, making it the preferred choice for complex and highly customized workflows.
+
+**Key Features**
+
+- **Flexibility:** Write custom logic, loops, and conditional statements using Groovy scripting to handle advanced scenarios.
+- **Complex Workflows:** Perfect for defining intricate CI/CD processes that require more than what a structured pipeline can offer.
+- **Legacy Support:** Ideal for maintaining and extending existing Jenkins jobs that may not fit neatly into the Declarative model.
+- **Extensibility:** Easily integrate custom code and third-party libraries to extend Jenkins' functionality.
+
+**Example of Scripted Pipeline:**
+```groovy
+node {
+    stage('Build') {
+        echo 'Building...'
+    }
+    stage('Test') {
+        echo 'Testing...'
+    }
+    stage('Deploy') {
+        echo 'Deploying...'
+    }
+}
+```
+
+**When to Use Scripted Pipeline**
+
+- **Complex Scenarios:** Best for workflows that require advanced logic and custom behavior.
+- **Legacy Jobs:** Suitable for maintaining older Jenkins jobs that need to be preserved and extended.
+
+**Conclusion**
+
+The Scripted Pipeline in Jenkins is a powerful tool for developers who need full customization in their CI/CD workflows. By leveraging the flexibility of Groovy scripting, you can create pipelines that are highly tailored to your specific needs, making it easier to manage complex projects and legacy systems.
